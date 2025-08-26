@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tribute to Ratan Tata Ji</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="brand">Ratan Tata Ji</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#highlights">Values</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#guestbook">Tribute</a>
+    </nav>
+    <div class="controls">
+      <label class="theme-toggle" title="Toggle theme">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
+
+      <select id="fontPicker" title="Choose font">
+        <option value="'Poppins', sans-serif">Poppins</option>
+        <option value="'Merriweather', serif">Merriweather</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="reveal">Ratan Tata Ji</h1>
+      <p class="subtitle reveal">Visionary leader, philanthropist, and the face of Indian industrial growth with a heart full of compassion.</p>
+      <a href="#about" class="btn primary reveal">Learn More ↓</a>
+    </div>
+    <div class="parallax"></div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">Why I Admire Ratan Tata Ji</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Ratan Tata Ji is not just a business icon; he is a symbol of humility, vision, and ethical leadership. Under his stewardship, the Tata Group grew into a global conglomerate, yet he always prioritized people over profits.
+          </p>
+          <p>
+            His philanthropy has touched countless lives — from healthcare to education to rural development — proving that success is best measured by the impact you have on others.
+          </p>
+          <p>
+            His ability to remain grounded, even at the peak of success, inspires me to lead with empathy and integrity.
+          </p>
+          <div class="like-row">
+            <button class="icon-btn" id="likeBtn">❤️</button>
+            <span id="likeCount">0</span> appreciations
+          </div>
+        </div>
+        <figure class="about-photo reveal">
+          <img src="ratanji.jpg" alt="Ratan Tata Ji" />
+          <figcaption>“I don't believe in taking right decisions. I take decisions and then make them right.”</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section alt" id="highlights">
+    <div class="container">
+      <h2 class="section-title reveal">Core Values</h2>
+      <div class="card-grid">
+        <article class="card reveal">
+          <div class="card-emoji">🤝</div>
+          <h3>Integrity</h3>
+          <p>Uncompromising ethics in every decision and action.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-emoji">🌍</div>
+          <h3>Social Impact</h3>
+          <p>Using business as a force for positive change in society.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-emoji">💡</div>
+          <h3>Innovation</h3>
+          <p>Encouraging creativity and bold thinking across industries.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-emoji">❤️</div>
+          <h3>Compassion</h3>
+          <p>Caring for communities and employees as family.</p>
+        </article>
+      </div>
+
+      <!-- Quote Carousel -->
+      <div class="carousel reveal">
+        <button class="carousel-btn" id="prevQuote">‹</button>
+        <div class="carousel-track" id="quoteTrack">
+          <blockquote class="quote">“None can destroy iron, but its own rust can! Likewise, none can destroy a person but his own mindset can.”</blockquote>
+          <blockquote class="quote">“Take the stones people throw at you and use them to build a monument.”</blockquote>
+          <blockquote class="quote">“Ups and downs in life are very important to keep us going.”</blockquote>
+        </div>
+        <button class="carousel-btn" id="nextQuote">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2 class="section-title reveal">In Pictures</h2>
+      <div class="filters reveal">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="work">Work</button>
+        <button class="chip" data-filter="events">Events</button>
+        <button class="chip" data-filter="life">Life</button>
+      </div>
+
+      <div class="grid gallery-grid">
+        <figure class="tile reveal" data-category="work">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Ratan_Tata_at_Tata_Group_event.jpg" alt="At Tata Group event" />
+        </figure>
+        <figure class="tile reveal" data-category="events">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Ratan_Tata_in_2010.jpg" alt="Speaking at an event" />
+        </figure>
+        <figure class="tile reveal" data-category="life">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Ratan_Tata_2011.jpg" alt="Smiling portrait" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section alt" id="timeline">
+    <div class="container">
+      <h2 class="section-title reveal">Timeline of Inspiration</h2>
+      <ol class="timeline">
+        <li class="reveal"><time>1937</time> Born in Bombay, India.</li>
+        <li class="reveal"><time>1991</time> Became Chairman of Tata Group, ushering in global expansion.</li>
+        <li class="reveal"><time>1998</time> Launched the Tata Indica — India's first indigenous car.</li>
+        <li class="reveal"><time>2008</time> Acquired Jaguar Land Rover, putting India on the global auto map.</li>
+        <li class="reveal"><time>2012</time> Retired as Chairman, leaving a legacy of integrity and growth.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Guestbook -->
+  <section class="section" id="guestbook">
+    <div class="container">
+      <h2 class="section-title reveal">Leave Your Tribute</h2>
+      <form id="guestbookForm" class="guestbook-form reveal">
+        <input type="text" id="guestName" placeholder="Your name" required />
+        <textarea id="guestMessage" placeholder="Your message for Ratan Tata Ji…" rows="3" required></textarea>
+        <button type="submit" class="btn">Post</button>
+      </form>
+      <ul id="guestbookList" class="guestbook-list reveal"></ul>
+    </div>
+  </section>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top">↑</button>
+
+  <!-- Modal -->
+  <dialog id="imgModal" class="img-modal">
+    <img id="modalImg" alt="Preview" />
+    <button id="closeModal" class="icon-btn modal-close">✕</button>
+  </dialog>
+
+  <footer class="footer">
+    <p>Tribute page created with ❤️ for Ratan Tata Ji.</p>
+  </footer>
+
+  <script src="script1.js"></script>
+</body>
+</html>

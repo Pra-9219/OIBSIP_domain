@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Temperature Converter</h1>
+    <p class="lead"> <strong>Convert </strong>. Supports Celsius, Fahrenheit and Kelvin.</p>
+
+    <div class="row">
+      <div class="col">
+        <label for="inputValue">Temperature</label>
+        <input id="inputValue" type="text" placeholder="e.g. 36.6" aria-label="Temperature input" />
+      </div>
+      <div style="width:130px">
+        <label for="fromUnit">From</label>
+        <select id="fromUnit" aria-label="From unit">
+          <option value="C">Celsius (°C)</option>
+          <option value="F">Fahrenheit (°F)</option>
+          <option value="K">Kelvin (K)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row" style="align-items:end">
+      <div class="col">
+        <label for="toUnit">To</label>
+        <select id="toUnit" aria-label="To unit">
+          <option value="F">Fahrenheit (°F)</option>
+          <option value="C">Celsius (°C)</option>
+          <option value="K">Kelvin (K)</option>
+        </select>
+      </div>
+      <div style="width:130px;display:flex;gap:8px;align-items:center">
+        <button id="convertBtn">Convert</button>
+        <button id="swapBtn" title="Swap units">⇄</button>
+      </div>
+    </div>
+
+    <div class="output" id="outputArea" aria-live="polite">
+      <div class="text" id="result">—</div>
+      <div class="unit-badge" id="unitBadge"></div>
+    </div>
+
+    
+    <div id="errorMsg" class="helper error" style="display:none"></div>
+
+  
+  </main>
+
+  <script src="script2.js"></script>
+</body>
+</html>
